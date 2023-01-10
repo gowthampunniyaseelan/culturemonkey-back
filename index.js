@@ -11,7 +11,7 @@ const port = process.env.PORT || 8080
 const CompanyModel = require("./src/database/models/company")
 const UserModel = require("./src/database/models/user")
 
-mongoose.connect(process.env.MONGODB_URI,{
+mongoose.connect("mongodb+srv://gowtham:laraps25@cluster0.9ezhpc2.mongodb.net/culturemonkey?retryWrites=true&w=majority",{
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(()=>{
